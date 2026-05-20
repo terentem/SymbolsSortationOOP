@@ -2,7 +2,7 @@ package org.example.symbolssortationoopv;
 
 import org.example.symbolssortationoopv.model.Symbol;
 import org.example.symbolssortationoopv.model.SymbolsCollection;
-import org.example.symbolssortationoopv.utils.CollectionCreator;
+import org.example.symbolssortationoopv.utils.LinkedObjectsCreator;
 import org.example.symbolssortationoopv.utils.Printer;
 import org.example.symbolssortationoopv.utils.StringConvertor;
 
@@ -15,8 +15,8 @@ public class SortApplication {
         char[] charOfSymbols = StringConvertor.convertStringToCharArr(strOfSymbols);
 
         //2. Create linked set of objects of Symbol type in heap for every unique symbol from array of char symbols
-        CollectionCreator.createLinkedObjects(charOfSymbols);
-        Symbol lastRefOfLinkedObjects = CollectionCreator.getLastRefOfLinkedObjects();
+        LinkedObjectsCreator.createLinkedObjects(charOfSymbols);
+        Symbol lastRefOfLinkedObjects = LinkedObjectsCreator.getLastRefOfLinkedObjects();
 
         //3.Create collection of unique Symbol objects
         SymbolsCollection sb=new SymbolsCollection(lastRefOfLinkedObjects);

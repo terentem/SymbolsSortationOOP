@@ -1,9 +1,8 @@
 package org.example.symbolssortationoopv.utils;
 
-import org.example.symbolssortationoopv.model.CollectionForSymbolObjects;
 import org.example.symbolssortationoopv.model.Symbol;
 
-public class CollectionCreator {
+public class LinkedObjectsCreator {
     private static Symbol lastRefOfLinkedObjects;
     private static Symbol[] unSortedUniqueSymbols;
 

@@ -10,6 +10,7 @@ public class Printer {
     }
 
     public static void printSortedSymbolFrequency(String text, Symbol[] sortedCollectionOfRefs) {
+        System.out.println("************************************************************************************");
         System.out.println(text);
         Symbol placedS;
         for (Symbol c : sortedCollectionOfRefs) {
@@ -18,7 +19,7 @@ public class Printer {
             }
             if (c != null) {
                 if (c.getRefferenceToNextSymbol() == null) {
-                    System.out.print(c.getSymbolValue() + ":" + c.getFrequencyValue() + "; ");
+                    System.out.println(c.getSymbolValue() + ":" + c.getFrequencyValue() + "; ");
                 } else {
                     placedS = c;
                     while (placedS != null) {
@@ -26,6 +27,7 @@ public class Printer {
                         placedS = placedS.getRefferenceToNextSymbol();
                     }
                     ;System.out.print(";");
+                    ;System.out.println();
                 }
             }
         }

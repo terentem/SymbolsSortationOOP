@@ -1,11 +1,11 @@
 package org.example.symbolssortationoopv.model;
-
+//TODO: remove all unused fields and methods
 public class SymbolsCollection {
     private Symbol lastRef;
     private int collectionLength;
     private Symbol[] sortedCollection;
 
-    public SymbolsCollection(Symbol lastRef) {
+    public SymbolsCollection(Symbol lastRef) {//TODO: rename into lastCreatedObject
         this.lastRef = lastRef;
     }
 
